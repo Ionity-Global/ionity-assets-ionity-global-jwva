@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── Primary SEO ── -->
+  <title>Ionity Assets · Digital Assets | Ionity Global | JWVA</title>
+  <meta name="description"
+    content="Official digital-asset hub for Ionity Global — brand assets, design tokens, SVG icons and ecosystem documentation curated by Johan Wilhelm van Antwerp (JWVA) / Antwerp Ecosystems Designs Ionity ÆĐï." />
+  <meta name="keywords"
+    content="Ionity, Ionity Global, JWVA, Johan Wilhelm van Antwerp, digital assets, brand assets, design tokens, icons, Antwerp Ecosystems Designs, ÆĐï, ionity-assets, GitHub Pages" />
+  <meta name="author" content="Johan Wilhelm van Antwerp // Antwerp Ecosystems Designs Ionity ÆĐï" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ionity-global.github.io/ionity-assets-ionity-global-jwva/" />
+
+  <!-- ── Open Graph / Facebook ── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://ionity-global.github.io/ionity-assets-ionity-global-jwva/" />
+  <meta property="og:title"       content="Ionity Assets · Digital Assets | Ionity Global | JWVA" />
+  <meta property="og:description" content="Official digital-asset hub for Ionity Global — brand assets, design tokens, SVG icons and ecosystem documentation." />
+  <meta property="og:site_name"   content="Ionity Assets" />
+
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Ionity Assets · Digital Assets | Ionity Global | JWVA" />
+  <meta name="twitter:description" content="Official digital-asset hub for Ionity Global — brand assets, design tokens, SVG icons and ecosystem documentation." />
+
+  <!-- ── JSON-LD Structured Data ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Ionity Assets — Ionity Global JWVA",
+    "description": "Official digital-asset repository for Ionity Global, maintained by Johan Wilhelm van Antwerp (JWVA). Covers brand assets, design tokens, icons and the Ionity Ecosystem.",
+    "url": "https://ionity-global.github.io/ionity-assets-ionity-global-jwva/",
+    "codeRepository": "https://github.com/Ionity-Global/ionity-assets-ionity-global-jwva",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+      "@type": "Person",
+      "name": "Johan Wilhelm van Antwerp",
+      "alternateName": "JWVA",
+      "url": "https://github.com/AntwerpDesignsIonity"
+    },
+    "maintainer": {
+      "@type": "Organization",
+      "name": "Ionity Global",
+      "url": "https://github.com/Ionity-Global"
+    },
+    "keywords": "Ionity, Ionity Global, JWVA, digital assets, brand assets, design tokens"
+  }
+  </script>
+
+  <!-- ── Styles ── -->
+  <style>
+    :root {
+      --accent:  #f5a623;
+      --bg:      #0d0d0d;
+      --surface: #1a1a1a;
+      --border:  #2a2a2a;
+      --text:    #e8e8e8;
+      --muted:   #888;
+      --radius:  10px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Header ── */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    header .logo { font-size: 2.8rem; margin-bottom: .4rem; }
+    header h1 { font-size: 2rem; font-weight: 700; color: var(--accent); letter-spacing: -0.02em; }
+    header p.tagline { color: var(--muted); margin-top: .5rem; font-size: 1.05rem; }
+    .badge-row { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin-top: 1.2rem; }
+    .badge-row img { height: 22px; }
+
+    /* ── Nav ── */
+    nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: .75rem 1rem;
+      flex-wrap: wrap;
+    }
+    nav a { color: var(--text); font-size: .95rem; font-weight: 500; }
+    nav a:hover { color: var(--accent); text-decoration: none; }
+
+    /* ── Main ── */
+    main { max-width: 960px; margin: 0 auto; padding: 3rem 1.5rem; }
+
+    section { margin-bottom: 3.5rem; }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: .4rem;
+      margin-bottom: 1.2rem;
+    }
+    p { margin-bottom: 1rem; }
+
+    /* ── Feature grid ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.4rem 1.6rem;
+    }
+    .card .icon { font-size: 1.8rem; margin-bottom: .5rem; }
+    .card h3 { font-size: 1.05rem; margin-bottom: .4rem; color: var(--accent); }
+    .card p { margin: 0; color: var(--muted); font-size: .92rem; }
+
+    /* ── CTA buttons ── */
+    .btn-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: .65rem 1.4rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: .95rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: opacity .15s;
+    }
+    .btn:hover { opacity: .85; text-decoration: none; }
+    .btn-primary  { background: var(--accent); color: #000; }
+    .btn-outline  { background: transparent; color: var(--text); border-color: var(--border); }
+
+    /* ── Table ── */
+    table { width: 100%; border-collapse: collapse; font-size: .93rem; }
+    th, td { padding: .65rem 1rem; border: 1px solid var(--border); text-align: left; }
+    th { background: var(--surface); color: var(--accent); font-weight: 600; }
+
+    /* ── Code block ── */
+    pre {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.1rem 1.4rem;
+      overflow-x: auto;
+      font-size: .88rem;
+      line-height: 1.55;
+      color: #c9d1d9;
+    }
+    code { font-family: 'Fira Code', 'Cascadia Code', monospace; }
+
+    /* ── Wiki list ── */
+    .wiki-list { list-style: none; }
+    .wiki-list li { margin-bottom: .6rem; }
+    .wiki-list li::before { content: '📄 '; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: .88rem;
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════ HEADER ═══════════════════ -->
+<header>
+  <div class="logo">⚡</div>
+  <h1>Ionity Assets · Ionity Global</h1>
+  <p class="tagline">Official Digital-Asset Repository — JWVA Edition</p>
+  <div class="badge-row">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg"               alt="MIT License" />
+    <img src="https://img.shields.io/badge/Maintained%20by-JWVA-blue"            alt="Maintained by JWVA" />
+    <img src="https://img.shields.io/badge/Org-Ionity--Global-orange"            alt="Ionity Global" />
+    <img src="https://img.shields.io/badge/Website-Live-brightgreen?logo=github" alt="Website Live" />
+  </div>
+</header>
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav aria-label="Primary navigation">
+  <a href="#about">About</a>
+  <a href="#features">Features</a>
+  <a href="#catalogue">Catalogue</a>
+  <a href="#wiki">Wiki</a>
+  <a href="#get-started">Get Started</a>
+  <a href="https://github.com/Ionity-Global/ionity-assets-ionity-global-jwva" target="_blank" rel="noopener">GitHub ↗</a>
+</nav>
+
+<!-- ═══════════════════ MAIN ═══════════════════ -->
+<main>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      <strong>Ionity Assets</strong> (<code>ionity-assets-ionity-global-jwva</code>) is the single source of truth for
+      every digital asset belonging to the <strong>Ionity Global</strong> ecosystem — versioned, discoverable and ready
+      for integration across all Ionity products.
+    </p>
+    <p>
+      Maintained by <strong>Johan Wilhelm van Antwerp (JWVA)</strong> under
+      <em>Antwerp Ecosystems Designs Ionity ÆĐï</em>.
+    </p>
+    <div class="btn-row">
+      <a class="btn btn-primary"
+         href="https://github.com/Ionity-Global/ionity-assets-ionity-global-jwva"
+         target="_blank" rel="noopener">🔗 View on GitHub</a>
+      <a class="btn btn-outline"
+         href="https://github.com/Ionity-Global/ionity-assets-ionity-global-jwva/wiki"
+         target="_blank" rel="noopener">📖 Open Wiki</a>
+      <a class="btn btn-outline"
+         href="https://github.com/Ionity-Global/ionity-assets-ionity-global-jwva/issues"
+         target="_blank" rel="noopener">🐛 Issues</a>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <h2>Features</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Brand Assets</h3>
+        <p>Logos, wordmarks, colour swatches and typography specimens.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔷</div>
+        <h3>Design Tokens</h3>
+        <p>Standardised colour, spacing and typography variables ready for any framework.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🖼️</div>
+        <h3>Icon Library</h3>
+        <p>Scalable SVG icons optimised for web and mobile surfaces.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📐</div>
+        <h3>Brand Guidelines</h3>
+        <p>Usage rules, clear-space requirements and do / don't examples.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📄</div>
+        <h3>Documentation</h3>
+        <p>In-repo wiki and this published GitHub Pages site.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔒</div>
+        <h3>MIT Licensed</h3>
+        <p>Free to use, attribute and extend across any project.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOGUE -->
+  <section id="catalogue">
+    <h2>Asset Catalogue</h2>
+    <pre><code>ionity-assets-ionity-global-jwva/
+├── docs/                   ← GitHub Pages site (this website)
+│   ├── index.html
+│   ├── _config.yml
+│   └── wiki/               ← Wiki pages (mirrored for offline reading)
+│       ├── Home.md
+│       ├── Brand-Guidelines.md
+│       ├── Design-Tokens.md
+│       ├── Icon-Library.md
+│       └── Contributing.md
+├── LICENSE                 ← MIT License
+└── README.md               ← Project README</code></pre>
+    <p style="margin-top:1rem;color:var(--muted);">
+      Additional asset folders (logos, icons, tokens) will be added as the project grows.
+    </p>
+  </section>
+
+  <!-- REPO INFO -->
+  <section id="info">
+    <h2>Repository Details</h2>
+    <table>
+      <thead>
+        <tr><th>Detail</th><th>Value</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Owner</td><td><a href="https://github.com/Ionity-Global" target="_blank" rel="noopener">Ionity-Global</a></td></tr>
+        <tr><td>Maintainer</td><td>Johan Wilhelm van Antwerp (JWVA) — <em>Antwerp Ecosystems Designs Ionity ÆĐï</em></td></tr>
+        <tr><td>License</td><td><a href="https://github.com/Ionity-Global/ionity-assets-ionity-global-jwva/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a></td></tr>
+        <tr><td>Repository</td><td><a href="https://github.com/Ionity-Global/ionity-assets-ionity-global-jwva" target="_blank" rel="noopener">github.com/Ionity-Global/ionity-assets-ionity-global-jwva</a></td></tr>
+        <tr><td>Asset Website</td><td><a href="https://ionity-global.github.io/ionity-assets-ionity-global-jwva/" target="_blank" rel="noopener">ionity-global.github.io/ionity-assets-ionity-global-jwva/</a></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- WIKI -->
+  <section id="wiki">
+    <h2>Documentation &amp; Wiki</h2>
+    <p>Full documentation lives in two places:</p>
+    <ul class="wiki-list">
+      <li><a href="wiki/Home.html">Home</a> — Project overview and quick-start</li>
+      <li><a href="wiki/Brand-Guidelines.html">Brand Guidelines</a> — Logo usage, colours, typography</li>
+      <li><a href="wiki/Design-Tokens.html">Design Tokens</a> — Token reference and usage</li>
+      <li><a href="wiki/Icon-Library.html">Icon Library</a> — Icon catalogue and export formats</li>
+      <li><a href="wiki/Contributing.html">Contributing</a> — How to contribute assets or documentation</li>
+    </ul>
+    <p style="margin-top:1rem;">
+      All pages are also available on the
+      <a href="https://github.com/Ionity-Global/ionity-assets-ionity-global-jwva/wiki" target="_blank" rel="noopener">GitHub Wiki ↗</a>.
+    </p>
+  </section>
+
+  <!-- GET STARTED -->
+  <section id="get-started">
+    <h2>Get Started</h2>
+    <pre><code># Clone the repository
+git clone https://github.com/Ionity-Global/ionity-assets-ionity-global-jwva.git
+cd ionity-assets-ionity-global-jwva
+
+# Browse the site locally (no build step required)
+open docs/index.html</code></pre>
+    <div class="btn-row">
+      <a class="btn btn-primary"
+         href="https://github.com/Ionity-Global/ionity-assets-ionity-global-jwva/archive/refs/heads/main.zip">
+        ⬇ Download ZIP
+      </a>
+      <a class="btn btn-outline"
+         href="https://github.com/Ionity-Global/ionity-assets-ionity-global-jwva/fork"
+         target="_blank" rel="noopener">
+        🍴 Fork on GitHub
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <p>
+    © 2026 <strong>Johan Wilhelm van Antwerp // Antwerp Ecosystems Designs Ionity ÆĐï</strong>
+    · Licensed under <a href="https://github.com/Ionity-Global/ionity-assets-ionity-global-jwva/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a>
+    · <a href="https://github.com/Ionity-Global/ionity-assets-ionity-global-jwva" target="_blank" rel="noopener">GitHub</a>
+  </p>
+  <p style="margin-top:.4rem;">
+    Built with ⚡ by <a href="https://github.com/Ionity-Global" target="_blank" rel="noopener">Ionity Global</a>
+  </p>
+</footer>
+
+</body>
+</html>

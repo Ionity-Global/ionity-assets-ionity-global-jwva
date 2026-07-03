@@ -1,0 +1,51 @@
+# Jekyll configuration for GitHub Pages
+# https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll
+
+title: "Ionity Assets · Ionity Global"
+tagline: "Official Digital-Asset Repository — JWVA Edition"
+description: >
+  Official digital-asset hub for Ionity Global — brand assets, design tokens,
+  SVG icons and ecosystem documentation curated by Johan Wilhelm van Antwerp
+  (JWVA) / Antwerp Ecosystems Designs Ionity ÆĐï.
+author: "Johan Wilhelm van Antwerp (JWVA)"
+url: "https://ionity-global.github.io"
+baseurl: "/ionity-assets-ionity-global-jwva"
+
+# Repository
+repository: "Ionity-Global/ionity-assets-ionity-global-jwva"
+github_username: "AntwerpDesignsIonity"
+
+# SEO
+lang: en
+timezone: UTC
+
+# Theme (using minima as a safe default; index.html overrides the layout anyway)
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude from build
+exclude:
+  - "*.sh"
+  - "node_modules/"
+  - "vendor/"
+  - Gemfile
+  - Gemfile.lock
+
+# Collections
+collections:
+  wiki:
+    output: true
+    permalink: /wiki/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "wiki"
+    values:
+      layout: "default"

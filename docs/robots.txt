@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ionity-global.github.io/ionity-assets-ionity-global-jwva/sitemap.xml
