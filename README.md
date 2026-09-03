@@ -37,7 +37,7 @@ Use this repository as the single source for:
 Please review:
 - `LICENSE`
 - `License-Ionity Global.txt`
-- `/assets/Lisences,Policy,EULA/` (if applicable for specific files)
+- `/assets/Lisences,Policy,EULA/` (repository folder name; contains policy/EULA-related files)
 
 ## Notes
 
