@@ -4,11 +4,11 @@
 This page provides Ionity's cookie consent experience, including a consent banner, a settings modal, and preference handling for necessary, security, analytics, marketing, and preference cookies.
 
 ## Main Files
-- `/home/runner/work/ionity-assets-ionity-global-jwva/ionity-assets-ionity-global-jwva/assets/cookie-banner.html`  
+- `assets/cookie-banner.html`  
   HTML markup for the banner and settings modal.
-- `/home/runner/work/ionity-assets-ionity-global-jwva/ionity-assets-ionity-global-jwva/assets/js/cookie-manager.js`  
+- `assets/js/cookie-manager.js`  
   JavaScript logic for consent state, storage, and cookie behavior.
-- `/home/runner/work/ionity-assets-ionity-global-jwva/ionity-assets-ionity-global-jwva/assets/css/style.css`  
+- `assets/css/style.css`  
   Styling and animations for the banner and modal UI.
 
 ## Consent Behavior
